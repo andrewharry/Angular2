@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{96056A62-2642-4F95-ADE3-485903F4660B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.5</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="app.css" />
+    <Content Include="index.html" />
+    <Content Include="todo.html" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="todo.ts" />
+    <TypeScriptCompile Include="typings\angular2\angular2.d.ts" />
+    <TypeScriptCompile Include="typings\es6-promise\es6-promise.d.ts" />
+    <TypeScriptCompile Include="typings\rx\rx-lite.d.ts" />
+    <TypeScriptCompile Include="typings\rx\rx.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="tsd.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="firebase\" />
+    <Folder Include="scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="setup.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".tfignore" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Angular2.TodoApp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55234</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55234/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptAdditionalFlags> $(TypeScriptAdditionalFlags) --emitDecoratorMetadata </TypeScriptAdditionalFlags>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptAdditionalFlags> $(TypeScriptAdditionalFlags) --emitDecoratorMetadata </TypeScriptAdditionalFlags>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
