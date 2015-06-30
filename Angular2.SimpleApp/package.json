@@ -1,0 +1,9 @@
+{
+  "name": "Angular2.TodoApp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "typescript": "mhegazy/typescript",
+    "systemjs": "*"
+  }
+}
