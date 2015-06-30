@@ -1,5 +1,5 @@
 <div>
     <h1>Welcome {{fullName}}</h1>
-    <input id="firstName" type="text" [value]="firstName" placeholder="First Name" />
-    <input id="lastName" type="text" [value]="lastname" placeholder="last name" />
+    <input id="firstName" type="text" [value]="firstName" placeholder="First Name" (keyup)="onChange()"/>
+    <input id="lastName" type="text" [value]="lastName" placeholder="last Name" (keyup)="onChange()"/>
 </div>
