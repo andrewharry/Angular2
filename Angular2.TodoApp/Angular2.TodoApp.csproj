@@ -24,6 +24,8 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="app.css" />
+    <Content Include="firebase\angularfire.js" />
+    <Content Include="firebase\firebase.js" />
     <Content Include="index.html" />
     <Content Include="todo.html" />
     <Content Include="web.config" />
@@ -41,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="css\" />
-    <Folder Include="firebase\" />
     <Folder Include="scripts\" />
   </ItemGroup>
   <ItemGroup>
